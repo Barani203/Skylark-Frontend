@@ -1,10 +1,8 @@
 
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import UserLogin from './Login/UserLogin';
-import CompanyLogin from './Login/CompanyLogin';
-import Navbar from './components/Navbar/Navbar';
-import Otp from './Login/Otp';
+import UserSreen from './pages/UserSreen';
+
 
 
 function App() {
@@ -12,12 +10,7 @@ function App() {
     <>
        <BrowserRouter>
       <Routes>
-        <Route path="/" element={<CompanyLogin/>}>
-
-          {/* <Route index element={<Navbar />} /> */}
-          
-          {/* <Route path="/login" element={<Navbar />} /> */}
-         
+        <Route path="/" element={<UserSreen/>}> 
         </Route>
       </Routes>
     </BrowserRouter>
@@ -26,7 +19,3 @@ function App() {
 }
 
 export default App
-{/* <div>
-     
-<UserNavbar/>
-     </div> */}
